@@ -1,0 +1,104 @@
+/* pages/cart/cart.wxss */
+page{
+  padding: 8px;
+  box-sizing: border-box;
+  padding-bottom: 60rpx;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  padding:0; 
+}
+
+.list-item{
+  position: relative;
+  width: 100%;
+  display: flex;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+  border-radius: 5px;
+  box-shadow:  0 2px 2px rgba(10,16,20,.24),0 0 2px rgba(10,16,20,.12);
+  padding: 4px;
+  border: 1px solid #dedede;
+}
+
+.list-item view{
+  display: flex;
+  align-items: center;
+}
+
+.list-item view button{
+  height: 30rpx;
+  line-height: 30rpx;
+  width: 30rpx;
+  text-align: center;
+  background-color: #09F;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.list-item view .item-count{
+  padding: 0 8px;
+
+}
+
+.item-image{
+  width: 160rpx;
+}
+
+.cart-bottom {
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  width: 750rpx;
+  height: 60rpx;
+}
+
+.cart-bottom .toPay{
+  background: #f00;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border: 0;
+  width: 150rpx;
+  float: right;
+  position: absolute;
+  right: 24rpx;
+  top: 0;
+}
+
+.item-title{
+  width: 200rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item-price{
+  color: #f00;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.item-remove{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #eee;
+  width: 20px;
+  height: 20px;
+  line-height: 20rpx;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

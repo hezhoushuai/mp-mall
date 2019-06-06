@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/mall/mall",
+    "pages/cart/cart",
+    "pages/setting/setting",
+    "pages/login/login",
+    "pages/search/search",
+    "pages/map/map",
+    "pages/detail/detail",
+    "pages/cateGery/cateGery"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f00",
+    "navigationBarTitleText": "何周帅商城",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f00"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "调用位置信息"
+    }
+  },
+  "tabBar": {
+    "custom": false,
+    "color": "#666666",
+    "selectedColor": "#f00",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "icon/tabbarIcon/home.png",
+        "selectedIconPath": "icon/tabbarIcon/home-selected.png"
+      },
+      {
+        "pagePath": "pages/mall/mall",
+        "text": "商城",
+        "iconPath": "icon/tabbarIcon/mall.png",
+        "selectedIconPath": "icon/tabbarIcon/mall-selected.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "icon/tabbarIcon/cart.png",
+        "selectedIconPath": "icon/tabbarIcon/cart-selected.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "设置",
+        "iconPath": "icon/tabbarIcon/setting.png",
+        "selectedIconPath": "icon/tabbarIcon/setting-selected.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图",
+        "iconPath": "icon/tabbarIcon/home.png",
+        "selectedIconPath": "icon/tabbarIcon/home-selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

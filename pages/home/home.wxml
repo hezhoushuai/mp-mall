@@ -1,0 +1,6 @@
+<!--pages/home/home.wxml-->
+<view class='home-top-search'>
+  <image src='/icon/home/location.png' class='location-tab'></image>
+  <text>{{locationInfo ? locationInfo : "定位中..." }}</text>
+  <text class='search-box' bindtap='jumpToSearch'>搜索框</text>
+</view>

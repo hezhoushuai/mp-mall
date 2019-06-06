@@ -1,0 +1,23 @@
+/* pages/home/home.wxss */
+.home-top-search {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  background: #dedede;
+  padding: 4px;
+}
+
+.location-tab {
+  width: 24px;
+  height: 24px;
+}
+
+.search-box {
+  flex: 1;
+  background: #fff;
+  text-align: center;
+  height:  24px;
+  line-height: 24px;
+  margin-left: 4px;
+  border-radius: 3px;
+}

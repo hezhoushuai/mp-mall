@@ -1,0 +1,23 @@
+<!--pages/mall/mall.wxml-->
+<view class="mall-list">
+  <text
+    wx:for="{{mallList}}"
+    class="mall-list-title {{ current === item.id ? 'current' : '' }}"
+    catchtap="changeList"
+    data-id="{{item.id}}"
+    wx:key="{{item.id}}"
+  >{{item.name}}</text>
+</view>
+
+<view class="itemize">
+  <view
+    class="itemize-detail"
+    wx:for="{{detailLsit}}"
+    wx:key="{{item.id}}"
+    data-id="{{item.url}}"
+    catchtap="toCateGeory"
+  >
+    <image src="{{item.imageUrl}}"></image>
+    <text>{{item.title}}</text>
+  </view>
+</view>

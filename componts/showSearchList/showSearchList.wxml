@@ -1,0 +1,15 @@
+<!--componts/showSearchList/showSearchList.wxml-->
+<view class='box'>
+<text>{{title}}</text>
+  <view class='list-container'>
+    <navigator
+      wx:for="{{searchList}}"
+      wx:key="{{item.word}}"
+      bindtap="handleTap"
+      data-word="{{item.word}}"
+      class="list {{item.highlight === true ? 'highlight' : ''}}"
+    >
+        {{item.word}}
+    </navigator>
+  </view>
+</view>

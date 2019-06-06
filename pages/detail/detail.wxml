@@ -1,0 +1,40 @@
+<!--pages/detail/detail.wxml-->
+<swiper
+  indicator-dots="{{true}}"
+  autoplay="{{true}}"
+  interval="{{4000}}"
+  duration="{{1000}}"
+  style="width: 750rpx; height: 750rpx;"
+>
+  <block wx:for="{{detailList.detail.photo}}" wx:key="{{item.url}}">
+    <swiper-item>
+      <image
+        src="{{item.url}}"
+        class="slide-image"
+        style='width: 100%;height: 100%;'
+      />
+    </swiper-item>
+  </block>
+</swiper>
+<view class='head'>
+  <view class="good-title">{{detailList.detail.title}}</view>
+  <view>{{detailList.detail.couponStatus === "无券" ? "" : "原价:"  }}</view>
+  <view class="price">{{detailList.detail.couponStatus === "无券" ? "" : "用券后:"}} ￥{{detailList.detail.price}}</view>
+  <view class="saleNum">月销量: {{detailList.detail.saleNum}}</view>
+</view>
+<view class="detail-img">
+  <view><text class="desc">淘宝图文详情</text></view>
+</view>
+<view>
+  <image
+    wx:for="{{descContentList}}"
+    wx:key="{{item.photo.url}}"
+    class="desc-img"
+    src="{{item.photo.url}}"
+    mode="widthFix"
+  ></image>
+</view>
+<view class="add-to-cart">
+  <text catchtap='addToCart'>添加到购物车</text>
+  <text catchtap="toCart">到购物车</text>
+</view>

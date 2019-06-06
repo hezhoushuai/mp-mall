@@ -1,0 +1,47 @@
+<!--pages/cart/cart.wxml-->
+<view class="container" wx:if="{{cartList.length !== 0}}">
+  <checkbox-group
+    bindchange="checkBoxChange"
+  >
+    <label 
+      class="list-item checkbox"
+      wx:for="{{cartList}}"
+      wx:key="{{item.id}}"
+    >
+        <checkbox value="{{item.id}}"></checkbox>
+      <image
+        src="{{item.image}}"
+        class="item-image"
+        mode="widthFix"
+      ></image>
+      <text class="item-title">{{item.title}}</text>
+      <text class="item-price">￥{{item.price}}</text>
+      <view>
+        <button
+          data-type="decrement"
+          data-id="{{item.id}}"
+          catchtap="itemCrement"
+        >-</button>
+        <text class="item-count">{{item.count}}</text>
+        <button
+          data-type="increment"
+          data-id="{{item.id}}"
+          catchtap="itemCrement"
+        >+</button>
+      </view>
+      <button
+        class="item-remove"
+        data-removeId="{{item.id}}"
+        catchtap="removeItem"
+      >X</button>
+    </label >
+  </checkbox-group>
+  <view class="cart-bottom">
+  <text>全选</text>
+  <checkbox></checkbox>
+  <text>共计：{{countNum}}</text>
+  <text>合计:{{countPrice}}</text>
+  <button class="toPay">去结算</button>
+</view>
+</view>
+<view wx:else>购物车空空如也</view>

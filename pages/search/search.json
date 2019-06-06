@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "show-search-list": "../../componts/showSearchList/showSearchList"
+  }
+}

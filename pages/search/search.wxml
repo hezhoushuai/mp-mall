@@ -1,0 +1,17 @@
+<!--pages/search/search.wxml-->
+<view class='search-box'>
+  <input
+    focus="{{focus}}"
+    bindinput='setQValue'
+    confirm-type="search"
+    value='{{q}}'
+    class='search-input'
+    bindconfirm='submitSearch'
+  ></input>
+  <button class="search-btn" bindtap="submitSearch">搜索</button>
+</view>
+<show-search-list 
+  title="最近热搜"
+  search-list="{{hotWords}}"
+  bind:tagtosearch="setInputValue"
+></show-search-list>

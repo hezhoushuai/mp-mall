@@ -1,0 +1,17 @@
+/* componts/showSearchList/showSearchList.wxss */
+.box{
+  padding: 8px;
+}
+.list-container .list{
+  display: inline-block;
+  margin: 8px 8px 0 0;
+  padding: 4px 8px;
+  color: #333;
+  border-radius: 3px;
+  background-color: #dedede; 
+}
+
+.list-container .highlight {
+  background: #666;
+  color: #fff;
+}
